@@ -1,0 +1,95 @@
+:root{
+    --font-family: 'Fraunces', serif;
+    --color-orange: hsl(25, 97%, 53%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-light: hsl(217, 12%, 63%);
+    --color-medium-grey: hsl(216, 12%, 54%);
+    --color-dark-blue: hsl(213, 19%, 18%);
+    --color-very-dark-blue: hsl(216, 12%, 8%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: var(--font-family);
+    width: 100%;
+    background-color: #000;
+    height: 100vh;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    border-radius: 1rem;
+    margin: auto;
+    width: 90%;
+    height: 40rem;
+    background-color: var(--color-very-dark-blue);
+    padding: 1.8rem 2.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media (min-width: 375px) {
+    .card{
+        padding: 2.5rem 3.5rem;
+        max-width: 60rem;
+        height: 50rem;
+    }
+}
+.card__circle{
+    margin-top: 1.2rem;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--color-dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__icon{
+    width: 40%;
+}
+.card__paragraph{
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+.card__buttons{
+    padding-top: 1rem;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card__btn{
+    color: var(--color-white);
+    text-align: center;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-dark-blue);
+    padding: 1.6rem 1.7rem;
+}
+.card__btn:hover{
+    background-color: var(--color-light);
+}
+.active{
+    background-color: var(--color-orange);
+}
+.active:hover{
+    background-color: var(--color-orange);
+}
+.card__btn-submit{
+    border-radius: 3rem;
+    background-color: var(--color-orange);
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
