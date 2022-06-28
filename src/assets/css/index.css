@@ -12,6 +12,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html{
     font-size: 62.5%;
 }
@@ -24,6 +25,14 @@ body{
     color: var(--color-white);
     display: flex;
     flex-direction: column;
+}
+/* utilites */
+.text-center{
+    text-align: center;
+}
+.py-4{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 .card{
     border-radius: 1rem;
@@ -66,7 +75,7 @@ body{
     width: 95%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .card__btn{
     color: var(--color-white);
@@ -92,4 +101,29 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     letter-spacing: .2rem;
+}
+/* Changed card */
+.card__img{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 16rem;
+    max-height: 16rem;
+    height: 100%;
+    background-image: url('../images/illustration-thank-you.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.card__rating{
+    background-color: var(--color-dark-blue);
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: .3rem 0;
+    border-radius: 8rem;
+    color: var(--color-orange);
+    font-weight: 300;
+}
+.card__paragraph--rating{
+    text-align: center;
 }
