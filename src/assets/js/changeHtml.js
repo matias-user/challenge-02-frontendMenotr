@@ -6,10 +6,10 @@ const changeHtml = ( numberSelected ) => {
     const h3 =      document.createElement('h3');
     
 
-    article.classList.add('card','py-4');
+    article.classList.add('card','p-4','font-sans');
     figure.classList.add('card__img');
     p1.classList.add('card__rating');
-    h3.classList.add('card__title','text-center');
+    h3.classList.add('card__title','text-center','card__title--thanks');
     p2.classList.add('card__paragraph','card__paragraph--rating');
 
     p1.textContent = `You selected ${numberSelected} out of 5`;
